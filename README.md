@@ -8,11 +8,11 @@ Not Tested on AMD
 To install arch on an intel Virtual Machine
 Just run:
 ```
-bash <(curl -sSL https://raw.githubusercontent.com/blocbit/loxxon/main/archS.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/blocbit/loxxon.org/main/archS.sh)
 ```
 or for advanced users that wish to change their LUKS secret add parameters in the following order( disk path, cpu type, LUKS secret) .NB. all or none
 ```
-bash <(curl -sSL https://raw.githubusercontent.com/blocbit/loxxon/main/archS.sh) /dev/sda intel n3ws3cr3t
+bash <(curl -sSL https://raw.githubusercontent.com/blocbit/loxxon.org/main/archS.sh) /dev/sda intel n3ws3cr3t
 ```
 
 ## Explanation
