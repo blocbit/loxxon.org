@@ -29,5 +29,5 @@ a startup script has been added for the open beta to update the cypher node and 
 
 https://www.virtualbox.org/wiki/Downloads \
 https://archlinux.org/download/ \
-https://solokeys.com/ or https://www.yubico.com/
+https://solokeys.com/ or https://www.yubico.com/ \
 https://tangrams.io/
