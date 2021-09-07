@@ -91,7 +91,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 sed -i "s/GRUB_CMDLINE_LINUX=\"\"//g" /etc/default/grub
 echo GRUB_CMDLINE_LINUX="cryptdevice=UUID=$(blkid -t TYPE=crypto_LUKS -s UUID -o value):lxlvm root=/dev/vg1/lv_root" >> /run/GUUID
 cat /run/GUUID >> /etc/default/grub
-git clone https://github.com/blocbit/loxxon.git /run/lx
+git clone https://github.com/blocbit/loxxon.org.git /run/lx
 mv /run/lx/firstB.sh /etc/profile.d/ 
 grub-mkconfig -o /boot/grub/grub.cfg
 umount /run
