@@ -108,7 +108,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 umount /mnt/boot
 umount /mnt
 
-echo "###NB###NB###NB###NB###"
+echo "##> NB <#> NB <#> NB <#> NB <##"
 echo "* default disk password if not set : cyph3r ( small letters )"
 echo "* user account : lx ( small letter l small letter x )"
 echo "* first time user password : lx ( letter l letter x )"
