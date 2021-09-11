@@ -1,0 +1,16 @@
+[Unit]
+Description=bamboo
+
+[Service]
+WorkingDirectory=/opt/cypher/bamboo
+ExecStart=dotnet /opt/cypher/bamboo/clibamwallet.dll
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=bamboo
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target

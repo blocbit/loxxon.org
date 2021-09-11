@@ -93,6 +93,7 @@ echo GRUB_CMDLINE_LINUX="cryptdevice=UUID=$(blkid -t TYPE=crypto_LUKS -s UUID -o
 cat /run/GUUID >> /etc/default/grub
 git clone https://github.com/blocbit/loxxon.org.git /run/lx
 mv /run/lx/firstB.sh /etc/profile.d/ 
+cp /run/lx/conf/* /etc/systemd/system/
 grub-mkconfig -o /boot/grub/grub.cfg
 umount /run
 systemctl enable NetworkManager
