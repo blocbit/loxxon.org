@@ -79,6 +79,8 @@ pacstrap /mnt base linux linux-firmware nano ${target_core}-ucode lvm2 grub efib
 mkdir /mnt/hostrun
 mount --bind /run /mnt/hostrun
 
+modprobe efivarfs
+
 arch-chroot /mnt <<EOF
 echo "lxvm " > /etc/hostname
 echo "127.0.0.1    localhost
